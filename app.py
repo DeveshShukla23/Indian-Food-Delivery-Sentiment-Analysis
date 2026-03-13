@@ -6,6 +6,12 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+nltk.download('stopwords', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('omw-1.4', quiet=True)
+
 st.set_page_config(
     page_title="Food Delivery Sentiment Analyzer",
     page_icon="🍕",
@@ -124,4 +130,5 @@ st.markdown("---")
 st.markdown(
     "**Indian Food Delivery Sentiment Intelligence System** | "
     "Built with Python, NLTK, VADER & Streamlit"
+
 )
